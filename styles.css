@@ -1,0 +1,27 @@
+.tiger{
+    width: 600px;
+    height: 333px;
+}
+
+.panda{
+    width: 280px;
+    height: 320px;
+}
+
+.sheep{
+    width: 640px;
+    height: 480px;
+}
+
+.list-group{
+    width: 500px;
+    margin-left: 370px;
+    margin-top: 20px;
+}
+
+.animals-home{
+    position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
+}
