@@ -2,6 +2,7 @@
 
 <head>
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
     <script src="newscript.js"></script>
 </head>
 
@@ -12,17 +13,15 @@
     <!-- <p>Enter the operator: <input type="text" id="operator"></p> -->
 
 
-    <form action="calculations.html">
-        <fieldset>
-            <select name="operator" id="operator">
+
+    <select name="operator" id="operator">
             <option value="+">+</option>
                 <option value="-">–</option>
                 <option value="*">*</option>
                 <option value="/">/</option>
                 <option value="bl" disabled selected>Choose your operator</option>
         </select>
-        </fieldset>
-    </form>
+
 
     <p>Enter the second number: <input type="text" id="answer2"></p>
     <input type="button" onClick="showAlert()" value="Calculate">
