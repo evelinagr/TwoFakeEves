@@ -14,7 +14,7 @@ else if (operator == "-")
     this.alert(answer1 - answer2);
 else if (operator == "*")
     this.alert(answer1 * answer2);
-else if (operator == "/")
+else if (operator == "/" || ":")
     this.alert(answer1 / answer2);
 else
     this.alert("error");
