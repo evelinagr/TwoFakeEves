@@ -6,13 +6,27 @@
 </head>
 
 <body>
-    
-<h1>Calculator</h1>
-<p>Enter the first number: <input type="text" id="answer1"></p>
-<p>Enter the operator: <input type="text" id="operator"></p>
-<p>Enter the second number: <input type="text" id="answer2"></p>
-<input type="button" onClick="showAlert()" value="Calculate">
-    
+
+    <h1>Calculator</h1>
+    <p>Enter the first number: <input type="text" id="answer1"></p>
+    <!-- <p>Enter the operator: <input type="text" id="operator"></p> -->
+
+
+    <form action="calculations.html">
+        <fieldset>
+            <select name="operator" id="operator">
+            <option value="+">+</option>
+                <option value="-">–</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                <option value="bl" disabled selected>Choose your operator</option>
+        </select>
+        </fieldset>
+    </form>
+
+    <p>Enter the second number: <input type="text" id="answer2"></p>
+    <input type="button" onClick="showAlert()" value="Calculate">
+
 </body>
 
 </html>
