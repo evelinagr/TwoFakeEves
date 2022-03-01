@@ -1,6 +1,6 @@
 // program to check if the string is palindrome or not
 
-function checkPalindrome(str) {
+function Palindrome(str) {
 
     // find the length of a string
     const len = string.length;
@@ -20,6 +20,7 @@ function checkPalindrome(str) {
 const string = prompt('Enter a string: ');
 
 // call the function
-const value = checkPalindrome(string);
+const value = Palindrome(string);
 
 console.log(value);
+console.log("the string lenght is " + string.length);
