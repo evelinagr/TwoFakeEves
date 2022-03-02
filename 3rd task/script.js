@@ -24,3 +24,17 @@ const value = Palindrome(string);
 
 console.log(value);
 console.log("the string lenght is " + string.length);
+
+
+
+//anagram
+
+function anagram(string1, string2) {
+	let word1 = string1.split('').sort().join('').toLowerCase();
+    let word2 = string2.split('').sort().join('').toLowerCase();
+  return word1 === word2;
+}
+
+console.log(anagram("javascript", "scriptjava"));
+console.log(anagram("javascript", "sccripvaja"));
+console.log(anagram("eva", "vae"));

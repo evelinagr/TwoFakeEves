@@ -13,4 +13,4 @@ function showAlert() {
         this.alert(document.getElementById.value = answer1 / answer2);
     else
         this.alert("Error");
-}
+    }
