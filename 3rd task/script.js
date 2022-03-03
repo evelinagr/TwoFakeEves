@@ -38,3 +38,30 @@ function anagram(string1, string2) {
 console.log(anagram("javascript", "scriptjava"));
 console.log(anagram("javascript", "sccripvaja"));
 console.log(anagram("eva", "vae"));
+
+
+
+
+//max occuring element
+
+function maxoccur(str) {
+  var value = {}
+  for(let i = 0; i < str.length; i++) {
+    if(value[str[i]]) {
+      value[str[i]]++
+    } else {
+      value[str[i]] = 1
+    }
+  }
+  let keys = Object.keys(value)
+  let maxValue = -1, maxKey = ''
+  for(let i = 0; i < keys.length; i++) {
+    if(value[keys[i]] > maxValue) {
+      maxValue = value[keys[i]]
+      maxKey = keys[i]
+    }
+  }
+  console.log(maxKey, maxValue)
+}
+maxoccur('helloooooooooo')
+
